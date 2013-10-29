@@ -3,7 +3,7 @@ node-antigate
 
 antigate.com API client for node.js
 
-
+[Module homepage at bitbucket.org](https://bitbucket.org/ssbb/node-antigate)
 
 How to install
 --------------
