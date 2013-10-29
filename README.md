@@ -39,7 +39,7 @@ ag.processFromFile('CAPTCHA_FILE_PATH', function(error, text, id) {
   }
 });
 
-// Recognize the captcha from base 64 string
+// Recognize the captcha from base64 string
 ag.process('BASE_64_STRING', function(error, text, id) {
   if (error) {
     throw error;
