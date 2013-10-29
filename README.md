@@ -42,7 +42,6 @@ ag.processFromFile('CAPTCHA_FILE_PATH', function(error, text, id) {
 // Report bad captcha
 ag.report('CAPTCHA_ID_HERE');
 
-
 // Get you blanace
 ag.getBalance(function(error, balance) {
   if (error) {
