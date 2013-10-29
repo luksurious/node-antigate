@@ -13,7 +13,7 @@ Antigate.prototype.process = function(data, callback) {
   self.upload(data, function(error, captchaId) {
     self.check(captchaId, function(error, captchaText) {
       if (error) {
-        callback(error, null);
+        callback(error, null, null);
       } else {
         callback(null, captchaText, captchaId);
       }
