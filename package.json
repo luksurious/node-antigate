@@ -7,5 +7,9 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "request": "~2.27.0"
+  },
+  "repository": {
+    "type": "mercurial",
+    "url": "https://bitbucket.org/ssbb/node-antigate"
   }
 }
