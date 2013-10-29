@@ -15,7 +15,7 @@ Antigate.prototype.process = function(data, callback) {
       if (error) {
         callback(error, null);
       } else {
-        callback(null, captchaText);
+        callback(null, captchaText, captchaId);
       }
     });
   });
