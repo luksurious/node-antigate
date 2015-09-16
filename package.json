@@ -1,6 +1,6 @@
 {
   "name": "antigate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client for antigate.com API",
   "main": "antigate.js",
   "author": "Svyatoslav Bulbakha <mail@ssbb.me>",
@@ -10,6 +10,6 @@
   },
   "repository": {
     "type": "mercurial",
-    "url": "https://bitbucket.org/ssbb/node-antigate"
+    "url": "https://bitbucket.org/lukasbrueckner/node-antigate"
   }
 }
