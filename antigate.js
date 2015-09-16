@@ -77,7 +77,7 @@ Antigate.prototype.upload = function(body, callback) {
   }, function(error, response, body) {
     if (typeof callback !== 'function') return;
 
-    if (body.indexOf('OK') === 0) {
+    if (typeof body === 'string' && body.indexOf('OK') === 0) {
       callback(null, body.split('|')[1]);
     } else {
       callback(new Error(body), null);
