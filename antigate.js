@@ -104,7 +104,7 @@ Antigate.prototype.check = function (id, callback) {
                         self.check(id, callback);
                     }, 5000);
                 } else {
-                    callback(new Error(error), null);
+                    callback(new Error(body), null);
                 }
             }
         }
