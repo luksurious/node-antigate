@@ -1,15 +1,18 @@
 {
-  "name": "antigate",
-  "version": "0.0.2",
-  "description": "Client for antigate.com API",
-  "main": "antigate.js",
-  "author": "Svyatoslav Bulbakha <mail@ssbb.me>",
-  "license": "BSD-2-Clause",
-  "dependencies": {
-    "request": "~2.27.0"
-  },
-  "repository": {
-    "type": "mercurial",
-    "url": "https://bitbucket.org/lukasbrueckner/node-antigate"
-  }
+    "name": "antigate",
+    "version": "0.0.3",
+    "description": "Client for antigate.com API",
+    "main": "antigate.js",
+    "author": "Svyatoslav Bulbakha <mail@ssbb.me>",
+    "contributors": [
+        "Lukas Brückner <me@luksurious.me>"
+    ],
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "request": "~2.27.0"
+    },
+    "repository": {
+        "type": "mercurial",
+        "url": "https://bitbucket.org/lukasbrueckner/node-antigate"
+    }
 }
