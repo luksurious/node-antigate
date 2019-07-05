@@ -1,14 +1,14 @@
-var fs = require('fs'),
+const fs = require('fs'),
     request = require('request');
 
 
-var Antigate = function (key) {
+const Antigate = function (key) {
     this.key = key;
 };
 
 
 Antigate.prototype.process = function (data, callback) {
-    var self = this;
+    let self = this;
 
     self.upload(data, function (error, captchaId) {
         self.check(captchaId, function (error, captchaText) {
@@ -22,7 +22,7 @@ Antigate.prototype.process = function (data, callback) {
 };
 
 Antigate.prototype.processFromFile = function (filename, callback) {
-    var self = this;
+    let self = this;
 
     this.readCaptcha(filename, function (error, data) {
         if (error) {
@@ -34,7 +34,7 @@ Antigate.prototype.processFromFile = function (filename, callback) {
 };
 
 Antigate.prototype.processFromURL = function (url, callback) {
-    var self = this;
+    let self = this;
 
     this.loadCaptcha(url, function (error, data) {
         if (error) {
@@ -46,7 +46,7 @@ Antigate.prototype.processFromURL = function (url, callback) {
 };
 
 Antigate.prototype.report = function (id, callback) {
-    var url = 'http://antigate.com/res.php?key='
+    let url = 'http://antigate.com/res.php?key='
         + this.key
         + '&action=reportbad&id='
         + id;
@@ -86,11 +86,11 @@ Antigate.prototype.upload = function (body, callback) {
 };
 
 Antigate.prototype.check = function (id, callback) {
-    var url = 'http://antigate.com/res.php?key='
+    let url = 'http://antigate.com/res.php?key='
         + this.key
         + '&action=get&id='
         + id;
-    var self = this;
+    let self = this;
 
     request.get(url, function (error, response, body) {
         if (error) {
@@ -112,7 +112,7 @@ Antigate.prototype.check = function (id, callback) {
 };
 
 Antigate.prototype.getBalance = function (callback) {
-    var url = 'http://antigate.com/res.php?key='
+    let url = 'http://antigate.com/res.php?key='
         + this.key
         + '&action=getbalance';
     request.get(url, function (error, response, body) {
